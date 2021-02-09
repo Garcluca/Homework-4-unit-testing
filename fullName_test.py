@@ -9,13 +9,13 @@ class TestAvg(unittest.TestCase):
 
         self.assertEqual(fullName.calculate(a,b),"Jon Smith")
     def test_neg(self):
-        a = "Larry" 
+        a = "Larry   " 
         b = "Page"
         self.assertEqual(fullName.calculate(a,b),"Larry Page")
     def test_zero(self):
         a = "Lucas"
-        b = "Garcia"
-        self.assertEqual(fullName.calculate(a,b),"Lucas Garcia")
+        b = ""
+        self.assertEqual(fullName.calculate(a,b),"Lucas ")
 
 #if __name__ = '__main__':
 unittest.main()
